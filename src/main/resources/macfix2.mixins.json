@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.miguelcanepa.macfix2neoforge.macfix2.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "GlBackendMixin"
+  ],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

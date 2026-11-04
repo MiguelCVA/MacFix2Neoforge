@@ -1,0 +1,13 @@
+{
+  "itemGroup.macfix2": "Example Mod Tab",
+  "block.macfix2.example_block": "Example Block",
+  "item.macfix2.example_item": "Example Item",
+
+  "macfix2.configuration.title": "Macfix2 NeoForge Configs",
+  "macfix2.configuration.section.macfix2.common.toml": "Macfix2 NeoForge Configs",
+  "macfix2.configuration.section.macfix2.common.toml.title": "Macfix2 NeoForge Configs",
+  "macfix2.configuration.items": "Item List",
+  "macfix2.configuration.logDirtBlock": "Log Dirt Block",
+  "macfix2.configuration.magicNumberIntroduction": "Magic Number Text",
+  "macfix2.configuration.magicNumber": "Magic Number"
+}
