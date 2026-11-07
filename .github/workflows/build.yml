@@ -35,14 +35,12 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          cache-disabled: true
 
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew clean build -Ptarget_mc_version=${{ matrix.minecraft }}
+        run: ./gradlew build -Ptarget_mc_version=${{ matrix.minecraft }} --no-build-cache
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
