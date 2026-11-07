@@ -40,7 +40,12 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew clean build -Ptarget_mc_version=${{ matrix.minecraft }}
+        run: |
+          ./gradlew clean build \
+            -Ptarget_mc_version=${{ matrix.minecraft }} \
+            --no-build-cache \
+            --rerun-tasks \
+            --stacktrace
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
